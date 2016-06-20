@@ -6,7 +6,7 @@
 
     <groupId>com.github.solairerove.blog</groupId>
     <artifactId>liferay-blog-client</artifactId>
-    <version>liferay-blog-client</version>
+    <version>0.0.1b</version>
     <packaging>war</packaging>
 
     <name>liferay-blog-client</name>
