@@ -6,20 +6,44 @@
 
     <groupId>com.github.solairerove.blog</groupId>
     <artifactId>liferay-blog-client</artifactId>
-    <version>blog-client</version>
+    <version>liferay-blog-client</version>
     <packaging>war</packaging>
 
-    <name>blog-app</name>
-    <description>RESTFul Blog</description>
-    <url>https://github.com/solairerove/blog-app</url>
+    <name>liferay-blog-client</name>
+    <description>Liferay blog client portlet</description>
+    <url>https://github.com/solairerove/liferay-blog-client</url>
 
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <liferay.version>6.2.5</liferay.version>
+        <spring.version>4.3.0.RELEASE</spring.version>
     </properties>
 
     <dependencies>
+        <!-- Spring Framework -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- Liferay -->
         <dependency>
             <groupId>com.liferay.portal</groupId>
             <artifactId>portal-service</artifactId>
@@ -53,13 +77,13 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
+            <version>3.0.1</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
-            <version>2.0</version>
+            <version>2.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -77,7 +101,7 @@
                 <version>1.0</version>
 
                 <configuration>
-                    <workingDirectory>${basedir}</workingDirectory>
+                    <workingDirectory>src/main/webapp</workingDirectory>
                 </configuration>
 
                 <executions>
@@ -103,7 +127,7 @@
                         </goals>
                         <configuration>
                             <arguments>install</arguments>
-                            <installDirectory>${basedir}</installDirectory>
+                            <installDirectory>src/main/webapp</installDirectory>
                         </configuration>
                     </execution>
 
@@ -115,7 +139,7 @@
                         </goals>
                         <configuration>
                             <arguments>run tsc</arguments>
-                            <installDirectory>${basedir}</installDirectory>
+                            <installDirectory>src/main/webapp</installDirectory>
                         </configuration>
                     </execution>
                 </executions>

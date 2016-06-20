@@ -7,8 +7,8 @@ http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd "
              version="2.0">
 
     <portlet>
-        <portlet-name>Blog-App</portlet-name>
-        <display-name>Blog-App</display-name>
+        <portlet-name>liferay-blog-client</portlet-name>
+        <display-name>liferay-blog-client</display-name>
         <portlet-class>com.liferay.util.bridges.mvc.MVCPortlet</portlet-class>
         <init-param>
             <name>view-template</name>
@@ -19,9 +19,9 @@ http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd "
             <mime-type>text/html</mime-type>
         </supports>
         <portlet-info>
-            <title>Blog-App</title>
-            <short-title>Blog-App</short-title>
-            <keywords>Blog-App</keywords>
+            <title>liferay-blog-client</title>
+            <short-title>liferay-blog-client</short-title>
+            <keywords>liferay-blog-client</keywords>
         </portlet-info>
     </portlet>
 </portlet-app>
