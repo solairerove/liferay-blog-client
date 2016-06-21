@@ -3,20 +3,17 @@ package com.github.solairerove.blog.client.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.portlet.bind.annotation.RenderMapping;
 
 /**
  * Created by union on 20.06.16.
  */
-@Controller
+@Controller("homeController")
+@RequestMapping(value = "HOME")
 public class HomeController {
 
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @RenderMapping
     public String indexPage() {
         return "index";
-    }
-
-    @RequestMapping(value = "/view", method = RequestMethod.GET)
-    public String viewPage() {
-        return "view";
     }
 }
