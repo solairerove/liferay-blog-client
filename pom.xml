@@ -9,7 +9,7 @@
     <version>0.0.1b</version>
     <packaging>war</packaging>
 
-    <name>liferay-blog-client</name>
+    <name>blog-ui</name>
     <description>Liferay blog client portlet</description>
     <url>https://github.com/solairerove/liferay-blog-client</url>
 
@@ -17,37 +17,9 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <liferay.version>6.2.5</liferay.version>
-        <spring.version>4.3.0.RELEASE</spring.version>
     </properties>
 
     <dependencies>
-        <!-- Spring Framework -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc-portlet</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
         <!-- Liferay -->
         <dependency>
             <groupId>com.liferay.portal</groupId>

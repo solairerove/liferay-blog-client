@@ -3,6 +3,6 @@
 
 <display>
 	<category name="category.sample">
-		<portlet id="liferay-blog-client" />
+		<portlet id="blog-ui" />
 	</category>
 </display>

@@ -3,7 +3,7 @@
 
 <liferay-portlet-app>
 	<portlet>
-		<portlet-name>liferay-blog-client</portlet-name>
+		<portlet-name>blog-ui</portlet-name>
 		<instanceable>true</instanceable>
 		<requires-namespaced-parameters>false</requires-namespaced-parameters>
 	</portlet>

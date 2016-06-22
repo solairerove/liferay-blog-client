@@ -5,12 +5,12 @@
              http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd " version="2.0">
 
     <portlet>
-        <portlet-name>liferay-blog-client</portlet-name>
-        <display-name>liferay-blog-client</display-name>
-        <portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
+        <portlet-name>blog-ui</portlet-name>
+        <display-name>blog-ui</display-name>
+        <portlet-class>com.liferay.util.bridges.mvc.MVCPortlet</portlet-class>
         <init-param>
-            <name>contextConfiguration</name>
-            <value>/WEB-INF/spring/portlet-context.xml</value>
+            <name>view-template</name>
+            <value>/index.jsp</value>
         </init-param>
 
         <expiration-cache>0</expiration-cache>
@@ -21,9 +21,9 @@
         </supports>
 
         <portlet-info>
-            <title>liferay-blog-client</title>
-            <short-title>liferay-blog-client</short-title>
-            <keywords>liferay-blog-client</keywords>
+            <title>blog-ui</title>
+            <short-title>blog-ui</short-title>
+            <keywords>blog-ui</keywords>
         </portlet-info>
         <security-role-ref>
             <role-name>administrator</role-name>
