@@ -1,42 +1,42 @@
-<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
-<portlet:defineObjects/>
-<head>
-    <script> var URL_PATH = "<%=request.getContextPath()%>"</script>
-    <script>document.write('<base href="' + document.location + '" />');</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<%--<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>--%>
+<%--<portlet:defineObjects/>--%>
+<%--<head>--%>
+    <%--<script> var URL_PATH = "<%=request.getContextPath()%>"</script>--%>
+    <%--<script>document.write('<base href="' + document.location + '" />');</script>--%>
+    <%--<meta http-equiv="Content-type" content="text/html;charset=UTF-8">--%>
+    <%--<meta name="viewport" content="width=device-width, initial-scale=1">--%>
 
-    <script src="<%=request.getContextPath()%>/node_modules/systemjs/dist/system-polyfills.js"></script>
-    <script src="<%=request.getContextPath()%>/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="<%=request.getContextPath()%>/node_modules/systemjs/dist/system.src.js"></script>
+    <%--<script src="<%=request.getContextPath()%>/node_modules/systemjs/dist/system-polyfills.js"></script>--%>
+    <%--<script src="<%=request.getContextPath()%>/node_modules/angular2/bundles/angular2-polyfills.js"></script>--%>
+    <%--<script src="<%=request.getContextPath()%>/node_modules/systemjs/dist/system.src.js"></script>--%>
 
-    <script src="<%=request.getContextPath()%>/node_modules/rxjs/bundles/Rx.js"></script>
-    <script src="<%=request.getContextPath()%>/node_modules/angular2/bundles/angular2.dev.js"></script>
-    <script src="<%=request.getContextPath()%>/node_modules/angular2/bundles/http.dev.js"></script>
-    <script src="<%=request.getContextPath()%>/node_modules/angular2/bundles/router.dev.js"></script>
+    <%--<script src="<%=request.getContextPath()%>/node_modules/rxjs/bundles/Rx.js"></script>--%>
+    <%--<script src="<%=request.getContextPath()%>/node_modules/angular2/bundles/angular2.dev.js"></script>--%>
+    <%--<script src="<%=request.getContextPath()%>/node_modules/angular2/bundles/http.dev.js"></script>--%>
+    <%--<script src="<%=request.getContextPath()%>/node_modules/angular2/bundles/router.dev.js"></script>--%>
 
-    <link href="<%=request.getContextPath()%>/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/public/style/clean-blog.min.css" rel="stylesheet">
+    <%--<link href="<%=request.getContextPath()%>/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">--%>
+    <%--<link href="<%=request.getContextPath()%>/public/style/clean-blog.min.css" rel="stylesheet">--%>
 
-    <!-- Custom Fonts -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <%--<!-- Custom Fonts -->--%>
+    <%--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">--%>
+    <%--<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>--%>
+    <%--<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>--%>
 
-    <script>
-        System.import('<%=request.getContextPath()%>/app').catch(function (err) {
-            console.error(err);
-        });
-    </script>
-</head>
+    <%--<script>--%>
+        <%--System.import('<%=request.getContextPath()%>/app').catch(function (err) {--%>
+            <%--console.error(err);--%>
+        <%--});--%>
+    <%--</script>--%>
+<%--</head>--%>
 
-<body>
+<%--<body>--%>
 
-<my-app>Loading...</my-app>
+<%--<my-app>Loading...</my-app>--%>
 
-<script src="<%=request.getContextPath()%>/node_modules/jquery/dist/jquery.min.js"></script>
+<%--<script src="<%=request.getContextPath()%>/node_modules/jquery/dist/jquery.min.js"></script>--%>
 
-<script src="<%=request.getContextPath()%>/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<%--<script src="<%=request.getContextPath()%>/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>--%>
 
-<script src="<%=request.getContextPath()%>/public/js/clean-blog.min.js"></script>
-</body>
+<%--<script src="<%=request.getContextPath()%>/public/js/clean-blog.min.js"></script>--%>
+<%--</body>--%>

@@ -3,7 +3,6 @@
  */
 function getPath(){
     return URL_PATH + "/";
-    //return "";
 }
 
 (function (global) {
