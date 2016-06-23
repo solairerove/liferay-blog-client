@@ -77,10 +77,6 @@
                 <artifactId>frontend-maven-plugin</artifactId>
                 <version>1.0</version>
 
-                <configuration>
-                    <workingDirectory>src/main/webapp</workingDirectory>
-                </configuration>
-
                 <executions>
                     <execution>
                         <id>install node and npm</id>
@@ -104,7 +100,6 @@
                         </goals>
                         <configuration>
                             <arguments>install</arguments>
-                            <installDirectory>src/main/webapp</installDirectory>
                         </configuration>
                     </execution>
 
@@ -116,10 +111,14 @@
                         </goals>
                         <configuration>
                             <arguments>run tsc</arguments>
-                            <installDirectory>src/main/webapp</installDirectory>
                         </configuration>
                     </execution>
                 </executions>
+
+                <configuration>
+                    <installDirectory>target/node-installation-dir</installDirectory>
+                    <workingDirectory>src/main/webapp/</workingDirectory>
+                </configuration>
             </plugin>
 
             <plugin>

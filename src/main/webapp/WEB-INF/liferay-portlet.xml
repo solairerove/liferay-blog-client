@@ -3,9 +3,9 @@
 
 <liferay-portlet-app>
 	<portlet>
-		<portlet-name>blog-ui-0.0.1b</portlet-name>
-		<instanceable>true</instanceable>
-		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+		<portlet-name>blog-ui</portlet-name>
+		<header-portlet-css>/public/style/clean-blog.min.css</header-portlet-css>
+		<footer-portlet-javascript>/public/js/clean-blog.min.js</footer-portlet-javascript>
 	</portlet>
 	<role-mapper>
 		<role-name>administrator</role-name>

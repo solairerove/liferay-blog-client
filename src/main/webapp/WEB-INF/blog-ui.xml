@@ -8,16 +8,15 @@
         <portlet-name>blog-ui</portlet-name>
         <display-name>blog-ui</display-name>
         <portlet-class>com.liferay.util.bridges.mvc.MVCPortlet</portlet-class>
+
         <init-param>
             <name>view-template</name>
-            <value>/index.jsp</value>
+            <value>/view.jsp</value>
         </init-param>
 
         <expiration-cache>0</expiration-cache>
         <supports>
             <mime-type>text/html</mime-type>
-            <portlet-mode>view</portlet-mode>
-            <portlet-mode>edit</portlet-mode>
         </supports>
 
         <portlet-info>

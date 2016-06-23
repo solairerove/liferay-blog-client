@@ -1,24 +1,58 @@
-(function(global) {
+/**
+ * Created by union on 23.06.16.
+ */
+function getPath(){
+    return URL_PATH + "/";
+    //return "";
+}
+
+(function (global) {
 
     var map = {
-        'app':                        'app', // 'dist',
-        'angular2':                   'node_modules/angular2',
-        'rxjs':                       'node_modules/rxjs'
+        'app': 'app',
+        'rxjs': 'lib/rxjs',
+        'angular2': 'lib/angular2'
     };
 
     var packages = {
-        'app':                        { main: 'main.js',  defaultExtension: 'js' },
-        'rxjs':                       { defaultExtension: 'js' }
+        'app': {main: 'main.js', defaultExtension: 'js'},
+        'rxjs': {defaultExtension: 'js'}
     };
 
     var packageNames = [
-        'angular2/core'
+        'angular2',
+        'rxjs',
+        'systemjs'
     ];
-    
-    if (global.filterSystemConfig) { global.filterSystemConfig(config); }
-    
-    System.config(config);
 
-    System.import('app/main').then(null, console.error.bind(console));
+    packageNames.forEach(function (pkgName) {
+        packages[pkgName] = {defaultExtension: 'js'};
+    });
+
+    var config = {
+        map: map,
+        packages: packages
+    };
+
+    if (global.filterSystemConfig) {
+        global.filterSystemConfig(config);
+    }
+
+    var config = {
+        // DEMO ONLY! REAL CODE SHOULD NOT TRANSPILE IN THE BROWSER
+        transpiler: 'ts',
+        typescriptOptions: {
+            tsconfig: true
+        },
+        meta: {
+            'typescript': {
+                "exports": "ts"
+            }
+        },
+        map: map,
+        packages: packages
+    }
+
+    System.config(config);
 
 })(this);
