@@ -7,7 +7,7 @@ import {UserService} from "../../service/user.service";
 
 @Component({
     selector: 'my-log-in-component',
-    template: `<header class="intro-header" style="background-image: url('blog-ui-0.0.1b/../../../public/img/about-bg.jpg')">
+    template: `<header class="intro-header" style="background-image: url('https://cloud.githubusercontent.com/assets/9396988/16376415/c6e6f840-3c68-11e6-9cf5-9ec32cfe7e2b.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">

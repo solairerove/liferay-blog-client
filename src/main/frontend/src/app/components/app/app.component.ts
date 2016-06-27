@@ -103,14 +103,14 @@ import {LogInComponent} from "../log-in/log-in.component";
     <!-- /.container -->
 </nav>
 
-blog-ui-0.0.1b/<router-outlet></router-outlet>
+<router-outlet></router-outlet>
 
 <!-- Posts component invoke -->
-blog-ui-0.0.1b/<my-posts></my-posts>
+<my-posts></my-posts>
 
 <hr>
 
-blog-ui-0.0.1b/<my-footer></my-footer>`,
+<my-footer></my-footer>`,
     directives: [
         FooterComponent,
         ROUTER_DIRECTIVES

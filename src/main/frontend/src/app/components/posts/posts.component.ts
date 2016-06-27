@@ -11,7 +11,7 @@ import {PostService} from '../../service/post.service';
     template: `
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('../../../public/img/home-bg.jpg')">
+<header class="intro-header" style="background-image: url('https://cloud.githubusercontent.com/assets/9396988/16376410/c2e5a066-3c68-11e6-9bab-3ad032d79404.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">

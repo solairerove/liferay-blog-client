@@ -12,7 +12,7 @@ import {CommentService} from "../../service/comment.service";
     selector: 'my-post-detail',
     template: `<!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('blog-ui-0.0.1b/../../../public/img/post-bg.jpg')">
+<header class="intro-header" style="background-image: url('https://cloud.githubusercontent.com/assets/9396988/16376418/c9c1430e-3c68-11e6-8932-eaa15ef7bf8c.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
