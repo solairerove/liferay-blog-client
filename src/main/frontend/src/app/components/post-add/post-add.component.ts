@@ -7,7 +7,8 @@ import {Post} from "../../model/post";
 
 @Component({
     selector: 'my-post-add-component',
-    template: `<header class="intro-header" style="background-image: url('https://cloud.githubusercontent.com/assets/9396988/16376415/c6e6f840-3c68-11e6-9cf5-9ec32cfe7e2b.jpg')">
+    template: `
+<header class="intro-header" style="background-image: url('https://goo.gl/uztZHl')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -34,7 +35,9 @@ import {Post} from "../../model/post";
             </div>
         </div>
     </article>
+    
     <br/>
+    
     <article>
         <div class="container">
             <div class="row">
@@ -47,7 +50,9 @@ import {Post} from "../../model/post";
             </div>
         </div>
     </article>
+    
     <br/>
+    
     <article>
         <div class="container">
             <div class="row">
@@ -60,7 +65,9 @@ import {Post} from "../../model/post";
             </div>
         </div>
     </article>
+    
     <br/>
+    
     <article>
         <div class="container">
             <div class="row">
@@ -75,7 +82,7 @@ import {Post} from "../../model/post";
     </article>
 
     <br/>
-    <!-- Pager -->
+    
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">

@@ -9,9 +9,7 @@ import {PostService} from '../../service/post.service';
 @Component({
     selector: 'my-posts',
     template: `
-<!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('https://cloud.githubusercontent.com/assets/9396988/16376410/c2e5a066-3c68-11e6-9bab-3ad032d79404.jpg')">
+<header class="intro-header" style="background-image: url('https://goo.gl/SN5vMC')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -25,7 +23,6 @@ import {PostService} from '../../service/post.service';
     </div>
 </header>
 
-<!-- Main Content -->
 <div class="container" *ngFor="let post of posts">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -43,7 +40,8 @@ import {PostService} from '../../service/post.service';
             <hr>
         </div>
     </div>
-</div>`,
+</div>
+`,
     providers: [PostService, HTTP_PROVIDERS]
 })
 

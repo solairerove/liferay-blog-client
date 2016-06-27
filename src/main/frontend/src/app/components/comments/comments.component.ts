@@ -8,7 +8,8 @@ import {Comment} from "../../model/comment";
 
 @Component({
     selector: 'my-comments',
-    template: `<article *ngFor="let comment of comments">
+    template: `
+<article *ngFor="let comment of comments">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -24,7 +25,8 @@ import {Comment} from "../../model/comment";
             </div>
         </div>
     </div>
-</article>`,
+</article>
+`,
     providers: [
         CommentService, 
         HTTP_PROVIDERS
