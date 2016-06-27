@@ -9,7 +9,7 @@
     <version>0.0.1b</version>
     <packaging>war</packaging>
 
-    <name>liferay-blog-client</name>
+    <name>blog-ui</name>
     <description>Liferay blog client portlet</description>
     <url>https://github.com/solairerove/liferay-blog-client</url>
 
