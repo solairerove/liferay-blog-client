@@ -1,4 +1,4 @@
-##### Angular2 rest client of [backend app](https://github.com/vlsidlyarevich/liferay-blog-backend) on liferay portal
+### Angular2 rest client of [backend app](https://github.com/vlsidlyarevich/liferay-blog-backend) on liferay portal as a part of [blog app](https://github.com/solairerove/blog-app)
 
 ##### Build `*.war` file: 
 
