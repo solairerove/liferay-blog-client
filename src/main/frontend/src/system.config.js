@@ -4,9 +4,10 @@
 (function (global) {
 
     var map = {
-        'app': 'app',
-        'rxjs': 'lib/rxjs',
-        'angular2': 'lib/angular2'
+        'app': 'blog-ui-0.0.1b/app',
+        'public': 'blog-ui-0.0.1b/public',
+        'rxjs': 'blog-ui-0.0.1b/lib/rxjs',
+        'angular2': 'blog-ui-0.0.1b/lib/angular2'
     };
 
     var packages = {

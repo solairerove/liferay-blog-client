@@ -4,37 +4,41 @@
 
 <head>
     <title>Clean blog</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="lib/systemjs/dist/system-polyfills.js"></script>
-    <script src="lib/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="lib/systemjs/dist/system.src.js"></script>
+    <script src="blog-ui-0.0.1b/lib/systemjs/dist/system-polyfills.js"></script>
+    <script src="blog-ui-0.0.1b/lib/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="blog-ui-0.0.1b/lib/systemjs/dist/system.src.js"></script>
 
-    <script src="lib/rxjs/bundles/Rx.js"></script>
-    <script src="lib/angular2/bundles/angular2.dev.js"></script>
-    <script src="lib/angular2/bundles/http.dev.js"></script>
-    <script src="lib/angular2/bundles/router.dev.js"></script>
+    <script src="blog-ui-0.0.1b/lib/rxjs/bundles/Rx.js"></script>
+    <script src="blog-ui-0.0.1b/lib/angular2/bundles/angular2.dev.js"></script>
+    <script src="blog-ui-0.0.1b/lib/angular2/bundles/http.dev.js"></script>
+    <script src="blog-ui-0.0.1b/lib/angular2/bundles/router.dev.js"></script>
 
-    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="public/style/clean-blog.min.css" rel="stylesheet">
+    <link href="blog-ui-0.0.1b/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="blog-ui-0.0.1b/public/style/clean-blog.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-    <script src="system.config.js"></script>
+    <script src="blog-ui-0.0.1b/system.config.js"></script>
 
     <script>
-        System.config({
-            packages: {
-                app: {
-                    format: 'register',
-                    defaultExtension: 'js'
-                }
-            }
-        });
-        System.import('app')
+//        System.config({
+////            map: {
+////                app: 'app'
+////            },
+//            packages: {
+//                app: {
+//                    format: 'register',
+//                    defaultExtension: 'js'
+//                }
+//            }
+//        });
+        System.import('blog-ui-0.0.1b/app/main.js')
                 .then(null, console.error.bind(console));
     </script>
 
@@ -44,8 +48,8 @@
     <my-app>Loading...</my-app>
 </body>
 
-<script src="lib/jquery/dist/jquery.min.js"></script>
-<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="public/js/clean-blog.min.js"></script>
+<script src="blog-ui-0.0.1b/lib/jquery/dist/jquery.min.js"></script>
+<script src="blog-ui-0.0.1b/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="blog-ui-0.0.1b/public/js/clean-blog.min.js"></script>
 
 </html>
