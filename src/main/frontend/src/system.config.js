@@ -1,10 +1,6 @@
 /**
  * Created by union on 23.06.16.
  */
-function getPath(){
-    return URL_PATH + "/";
-}
-
 (function (global) {
 
     var map = {
@@ -35,21 +31,6 @@ function getPath(){
 
     if (global.filterSystemConfig) {
         global.filterSystemConfig(config);
-    }
-
-    var config = {
-        // DEMO ONLY! REAL CODE SHOULD NOT TRANSPILE IN THE BROWSER
-        transpiler: 'ts',
-        typescriptOptions: {
-            tsconfig: true
-        },
-        meta: {
-            'typescript': {
-                "exports": "ts"
-            }
-        },
-        map: map,
-        packages: packages
     }
 
     System.config(config);

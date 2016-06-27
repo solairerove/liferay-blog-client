@@ -20,11 +20,11 @@ target/
 
 npm-debug.log
 node
-etc
 node_modules
 typings
 
 *.js
 *.js.map
 !clean-blog.min.js
-!systemjs.config.js
+!system.config.js
+webapp

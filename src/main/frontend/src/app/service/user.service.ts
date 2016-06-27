@@ -4,21 +4,21 @@ import {Observable} from "rxjs/Observable";
 import "rxjs/Rx";
 
 import {Post} from "../model/post";
+import {Token} from "../model/token"
 import {Constraints} from '../constraints/constraints';
+import {User} from "../model/user";
 
 @Injectable()
-export class PostService {
+export class UserService {
 
     private url:string;
-    private postUrl:string;
 
     constructor(private http:Http) {
-        this.url = Constraints.POST_URL;
-        this.postUrl = Constraints.POST_URL;
+        this.url = Constraints.API_URL;
     }
 
-    getPosts():Observable<Post[]> {
-        return this.http.get(this.url)
+    authenticate(user:User):Observable<Token> {
+        return this.http.get(this.url + "/authenticate")
             .map(res => res.json())
             .catch(this.handleError);
     }
@@ -35,9 +35,9 @@ export class PostService {
         headers.append('Content-type',
             'application/json');
 
-        return this.http.post(this.postUrl, json, {
-                headers: headers
-            })
+        return this.http.post(this.url, json, {
+            headers: headers
+        })
             .catch(this.handleError);
     }
 

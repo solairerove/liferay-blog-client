@@ -12,6 +12,7 @@ import {FooterComponent} from '../../components/footer/footer.component';
 import {PostDetailComponent} from '../../components/post-detail/post-detail.component';
 import {PostAddComponent} from '../../components/post-add/post-add.component';
 import {Constraints} from '../../constraints/constraints';
+import {LogInComponent} from "../log-in/log-in.component";
 
 @RouteConfig([
     {
@@ -34,6 +35,11 @@ import {Constraints} from '../../constraints/constraints';
         path: Constraints.ADD_POST_PATH,
         name: 'AddPost',
         component: PostAddComponent
+    },
+    {
+        path: Constraints.LOG_IN_PATH,
+        name: 'LogIn',
+        component: LogInComponent
     },
     {
         path: Constraints.OTHER,
